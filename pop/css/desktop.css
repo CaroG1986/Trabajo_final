@@ -1,0 +1,24 @@
+*{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden;font:13px "Segoe UI",system-ui,sans-serif;color:#1b1b1b}
+#screen{display:flex;flex-direction:column;height:100%}
+#desktop{position:relative;flex:1;overflow:hidden;background:linear-gradient(135deg,#0b3d7a,#2a8fd6 55%,#9fd8f5) center/cover no-repeat}
+.icon{position:absolute;left:12px;width:76px;background:none;border:1px solid transparent;color:#fff;text-shadow:0 1px 3px #000;padding:6px 2px;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:default;font:inherit}
+.icon:hover,.icon:focus-visible{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.4);outline:none}
+#icon-paint{top:12px}#icon-bin{top:104px}.ico{font-size:32px}
+#taskbar{height:44px;display:flex;align-items:center;background:rgba(236,240,246,.96);border-top:1px solid #c5ccd6;z-index:100000;position:relative}
+#start{width:52px;height:100%;border:0;background:none;font-size:22px;color:#0a64c8;cursor:pointer}#start:hover{background:#dbe5f2}
+#tasks{flex:1;display:flex;gap:2px;height:100%}
+.task{min-width:150px;border:0;border-bottom:3px solid #0a64c8;background:#dbe5f2;font:inherit;cursor:pointer;padding:0 12px;text-align:left}
+.task.min{border-bottom-color:transparent;background:none}
+#clock{padding:0 14px;text-align:right;line-height:1.25;font-size:12px;white-space:pre}
+.win{position:absolute;display:flex;flex-direction:column;background:#fff;border:1px solid #6b7d93;box-shadow:0 10px 30px rgba(0,0,0,.35);min-width:320px;min-height:240px}
+.win[hidden]{display:none}.win.max{inset:0!important;width:auto!important;height:auto!important}
+.titlebar{display:flex;align-items:center;justify-content:space-between;background:#e8eef6;height:32px;padding-left:10px;user-select:none;cursor:default}
+.titlebar .t{font-size:12px}.ctl{display:flex;height:100%}
+.ctl button{width:44px;border:0;background:none;font-size:13px;cursor:pointer}.ctl button:hover{background:#d3deec}.ctl .x:hover{background:#c42b1c;color:#fff}
+#screen{position:relative}
+.icon[hidden]{display:none}#icon-after{top:196px}.icon.reveal{animation:ficon .7s ease-out}
+@keyframes ficon{from{opacity:0}to{opacity:1}}
+.fold{width:42px;height:30px;margin-top:8px;position:relative;background:#f7c948;border-radius:2px 4px 3px 3px;box-shadow:inset 0 -9px 0 #e3a622}
+.fold::before{content:"";position:absolute;left:0;top:-6px;width:17px;height:7px;background:#f7c948;border-radius:3px 3px 0 0}
+.vwrap{flex:1;min-height:0;background:#000;position:relative;display:flex}.vwrap video{width:100%;height:100%;background:#000}
+.vmsg{position:absolute;inset:0;display:grid;place-items:center;color:#9aa5b4;font-size:14px}.vmsg[hidden]{display:none}

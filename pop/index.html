@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Escritorio</title>
+<link rel="stylesheet" href="css/desktop.css"><link rel="stylesheet" href="css/paint.css"><link rel="stylesheet" href="css/winbox.css"><link rel="stylesheet" href="css/intro.css"></head>
+<body>
+<div id="intro"><div><h1>YOUR MISSION</h1><p class="lead">Create a character.</p><p class="hint">Take your time. Draw someone you would like to meet.</p><button id="go">START</button></div></div>
+<div id="screen" inert>
+ <div id="desktop">
+  <button class="icon" id="icon-paint"><span class="ico">🎨</span><span>Paint</span></button>
+  <button class="icon" id="icon-after" hidden><span class="fold"></span><span class="nm"></span></button>
+  <button class="icon" id="icon-bin" tabindex="-1"><span class="ico">🗑️</span><span>Papelera</span></button>
+  <section class="win" id="paint-win" hidden>
+   <header class="titlebar"><span class="t">🎨 Sin título - Paint</span>
+    <span class="ctl"><button data-a="min" aria-label="Minimizar">—</button><button data-a="max" aria-label="Maximizar">▢</button><button data-a="close" class="x" aria-label="Cerrar">✕</button></span></header>
+   <div class="toolbar">
+    <label>Color <input type="color" id="p-color" value="#1a1a1a"></label>
+    <label>Grosor <input type="range" id="p-size" min="1" max="40" value="5"></label>
+    <button id="p-brush" class="on">Pincel</button><button id="p-eraser">Borrador</button>
+    <button id="p-clear">Limpiar</button><button id="p-save">Guardar PNG</button>
+   </div>
+   <div class="canvas-wrap"><canvas id="canvas" width="1400" height="900"></canvas></div>
+   <footer class="status"><span id="st-strokes">Trazos: 0</span><span id="st-stage"></span></footer>
+  </section>
+  <section class="win" id="video-win" hidden>
+   <header class="titlebar"><span class="t"></span><span class="ctl"><button data-a="min" aria-label="Minimizar">—</button><button data-a="max" aria-label="Maximizar">▢</button><button data-a="close" class="x" aria-label="Cerrar">✕</button></span></header>
+   <div class="vwrap"><video id="vid" controls preload="metadata" playsinline></video><div class="vmsg" id="vmsg" hidden></div></div>
+  </section>
+  <div id="popup-layer"></div>
+ </div>
+ <div id="taskbar">
+  <button id="start" aria-label="Inicio">⊞</button>
+  <div id="tasks"></div>
+  <div id="clock"></div>
+ </div>
+</div>
+<script src="js/config.js"></script><script src="js/stageContent.js"></script><script src="js/winbox.js"></script>
+<script src="js/finalState.js"></script><script src="js/stageManager.js"></script><script src="js/paint.js"></script><script src="js/vendor/three.min.js"></script><script src="js/particles/config.js"></script><script src="js/particles/shapes.js"></script><script src="js/particles/audio.js"></script><script src="js/particles/cursor.js"></script><script src="js/particles/sequence.js"></script><script src="js/particles/engine.js"></script><script src="js/particles/endCard.js"></script><script src="js/particles/videoStage.js"></script>
+<script src="js/main.js"></script></body></html>

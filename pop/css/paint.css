@@ -1,0 +1,6 @@
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:8px 10px;background:#f3f5f9;border-bottom:1px solid #d5dbe4}
+.toolbar button{border:1px solid #b9c3d1;background:#fff;padding:4px 10px;font:inherit;cursor:pointer}.toolbar button:hover{background:#e6eef9}
+.toolbar button.on{background:#cfe2fb;border-color:#0a64c8}.toolbar label{display:flex;gap:6px;align-items:center}
+.canvas-wrap{flex:1;overflow:auto;background:#8d98a8;padding:10px;min-height:0}
+#canvas{display:block;background:#fff;cursor:crosshair;touch-action:none;box-shadow:0 1px 4px rgba(0,0,0,.4)}
+.status{display:flex;gap:24px;padding:3px 10px;background:#f3f5f9;border-top:1px solid #d5dbe4;font-size:12px}
