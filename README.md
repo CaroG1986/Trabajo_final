@@ -5,7 +5,7 @@ Abre `index.html` en el navegador (doble clic). No requiere servidor ni instalac
 Alternativa: `python3 -m http.server` y visita http://localhost:8000.
 
 ## Cómo funciona
-`js/stageManager.js` suma puntos de progreso: 1 por segundo de dibujo activo (se detiene unos segundos después de soltar el ratón) y 2 por trazo completado. Al cruzar los umbrales se pasa de la etapa 0 (calma) a la 4 (invasión). Cerrar anuncios o limpiar el lienzo nunca baja la puntuación.
+`js/stageManager.js` suma puntos de progreso: 1 por segundo de dibujo activo (se detiene unos segundos después de soltar el ratón) y 2 por trazo completado. Al cruzar los umbrales se pasa de la etapa 0 (calma) a la 4 (invasión). Cerrar anuncios o limpiar el lienzo nunca baja la puntuación. mm
 
 ## Configuración (`js/config.js`)
 Umbrales de etapa, pesos de tiempo/trazos, intervalos, anuncios por aparición, límite de ventanas por etapa, regla de desborde (`wait` o `replaceOldest`), escalas de tamaño y tamaños base. Para probar rápido, baja `stageThresholds` (p. ej. `[0,3,8,15,25]`).
